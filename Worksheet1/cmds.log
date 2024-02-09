@@ -1,0 +1,22 @@
+    1  ls
+    2  ls -l
+    3  passwd
+    4  ping 172.20.25.9
+    5  wget www.github.com
+    6  ls -l
+    7  cat index.html 
+    8  ls
+    9  head index.html 
+   10  more index.html 
+   11  clear
+   12  git --version
+   13  history
+   14  mkdir cs131
+   15  cd cs131/
+   16  ls
+   17  git init
+   18  mkdir Worksheet1
+   19  cd Worksheet1/
+   20  ls -l
+   21  history
+   22  history > cmds.log
