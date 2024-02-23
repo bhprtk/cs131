@@ -1,0 +1,86 @@
+    1  ls
+    2  ls -l
+    3  passwd
+    4  ping 172.20.25.9
+    5  wget www.github.com
+    6  ls -l
+    7  cat index.html 
+    8  ls
+    9  head index.html 
+   10  more index.html 
+   11  clear
+   12  git --version
+   13  history
+   14  mkdir cs131
+   15  cd cs131/
+   16  ls
+   17  git init
+   18  mkdir Worksheet1
+   19  cd Worksheet1/
+   20  ls -l
+   21  history
+   22  history > cmds.log
+   23  ls
+   24  cat cmds.log 
+   25  cd ..
+   26  git commit -m "first commit"
+   27  git remote add origin https://github.com/bhprtk/cs131.git
+   28  git branch -M main
+   29  git push -u origin main
+   30  ls
+   31  git pull --rebase origin main
+   32  git branch
+   33  ls -l
+   34  l -la
+   35  ls =la
+   36  ls -l
+   37  ls -la
+   38  git pull --rebase origin main
+   39  git push -u origin main
+   40  git commit -m "initial commit"
+   41  git config --global user.email "bhprtk@gmail.com
+   42  "
+   43  git config --global user.name "Pratik Bhandari"
+   44  git commit -m "initial commit"
+   45  git add .
+   46  git commit -m "Initial COmmit"
+   47  git push origin main
+   48  git conif -l
+   49  git config -l
+   50  git push origin main
+   51  git remote add origin https://github.com/bhprtk/cs131.git
+   52  git push -u origin main
+   53  ls
+   54  head index.html 
+   55  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+   56  ls
+   57  head Global\ YouTube\ Statistics.csv 
+   58  grep "United States" Global\ YouTube\ Statistics.csv 
+   59  grep "Music" Global\ YouTube\ Statistics.csv 
+   60  man wc
+   61  ls
+   62  grep "Music" Global\ YouTube\ Statistics.csv > counts.txt
+   63  ls
+   64  cat counts.txt 
+   65  ls
+   66  rm -rf counts.txt 
+   67  ls
+   68  grep "Music" Global\ YouTube\ Statistics.csv | wc -l
+   69  grep "Music" Global\ YouTube\ Statistics.csv | wc -l > counts.txt
+   70  cat counts.txt 
+   71  grep "Music" Global\ YouTube\ Statistics.csv | wc -w
+   72  grep "Music" Global\ YouTube\ Statistics.csv | wc -w >> counts.txt 
+   73  cat counts.txt 
+   74  vi counts.txt 
+   75  cat counts.txt 
+   76  history
+   77  ls
+   78  cd cs131/
+   79  ls
+   80  cd Worksheet1/
+   81  ls
+   82  cd ..
+   83  ls
+   84  cd ..
+   85  ls
+   86  history > cmds.log
