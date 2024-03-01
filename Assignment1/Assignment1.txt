@@ -1,0 +1,40 @@
+2) Echo your current Shell using the global variable and paste the output of the command.  Which commands did you use?
+/bin/bash
+------------------------------------------------------------------------------------------------------------------------------------------
+2) Echo your home directory path and paste the output of the command.  Which commands did you use?
+/mnt/scratch/FA23_CS131_Ashish/pratiksp24
+------------------------------------------------------------------------------------------------------------------------------------------
+3) What is your UID?  To what group(s) do you belong?  How did you find out (command used)?
+1234
+pratiksp24 S77
+------------------------------------------------------------------------------------------------------------------------------------------
+4) Create a new directory "myDir" under the Assignment 1 folder. Now remove "write" permission for yourself.(see chmod man page) 
+From this temp directory, are you allowed to cd in that directory? Can you "ls" it?  Can you "ls -l" it? Can you create files under it?
+Yes ls and ls-l. cannot create file.
+------------------------------------------------------------------------------------------------------------------------------------------
+6) Find the total amount of RAM/Memory in the IBM VM using the 'free' command. Display the amount of memory in mebibytes.
+              total        used        free      shared  buff/cache   available
+Mem:          71367       32442       19778        3505       19146       33961
+Swap:          4119           0        4119
+------------------------------------------------------------------------------------------------------------------------------------------
+9) Identify the operating system version. Which file under /etc/ contains this information?
+NAME="Red Hat Enterprise Linux"
+VERSION="8.6 (Ootpa)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="8.6"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux 8.6 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::baseos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://access.redhat.com/documentation/red_hat_enterprise_linux/8/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+
+REDHAT_BUGZILLA_PRODUCT="Red Hat Enterprise Linux 8"
+REDHAT_BUGZILLA_PRODUCT_VERSION=8.6
+REDHAT_SUPPORT_PRODUCT="Red Hat Enterprise Linux"
+REDHAT_SUPPORT_PRODUCT_VERSION="8.6"
+------------------------------------------------------------------------------------------------------------------------------------------
+10) What is the permission (given to all users) for the file containing the OS version information
+lrwxrwxrwx. 1 root root 22 Apr  6  2022 /etc/os-release -> ..//usr/lib/os-release
