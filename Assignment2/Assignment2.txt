@@ -1,0 +1,67 @@
+1. a. The command will search for files and folders in the /etc directory and output the results to one.txt. During the search, all errors that occur will be outputted to two.txt.
+
+b. Using the cat command view one.txt and two.txt... In simple English sentences explain your observations about the content found in one.txt and two.txt
+
+one.txt will have the search results of the above command which lists all the files and folders in the etc directory. two.txt will have all the errors encountered when searching for the files such as trying to access files and folders where there are no read permissions for the current users.
+
+2.
+cut -d "," -f 20,21 Global\ YouTube\ Statistics.csv | sort | uniq -c | sort -nr | head -3
+     15 2006,Mar
+     13 2014,Jul
+     12 2014,Aug
+
+3. ps aux | grep pratiks+
+
+pratiks+ 3542394  0.0  0.0  28672 15104 ?        Ss   00:35   0:00 /usr/lib/systemd/systemd --user
+pratiks+ 3542396  0.0  0.0 208576 10880 ?        S    00:35   0:00 (sd-pam)
+pratiks+ 3542402  0.0  0.0  49600 13504 ?        S    00:35   0:00 sshd: pratiksp24@pts/43
+pratiks+ 3542403  0.0  0.0  19840  7872 pts/43   Ss   00:35   0:00 -bash
+pratiks+ 3548778  0.0  0.0  25344  8000 pts/43   R+   00:52   0:00 ps aux
+pratiks+ 3548779  0.0  0.0   8320  1792 pts/43   S+   00:52   0:00 grep --color=auto pratiks+
+
+4.
+a. 
+pratiks+ 3542394  0.0  0.0  28672 15104 ?        Ss   00:35   0:01 /usr/lib/systemd/systemd --user
+pratiks+ 3542396  0.0  0.0 208576 10880 ?        S    00:35   0:00 (sd-pam)
+pratiks+ 3542402  0.0  0.0  49600 13504 ?        S    00:35   0:00 sshd: pratiksp24@pts/43
+pratiks+ 3542403  0.0  0.0  19840  7872 pts/43   Ss   00:35   0:00 -bash
+pratiks+ 3549123  0.0  0.0  49280 10368 ?        S    00:53   0:00 sshd: pratiksp24@pts/47
+pratiks+ 3549126  0.0  0.0  19840  7744 pts/47   Ss   00:53   0:00 -bash
+pratiks+ 3549290  0.0  0.0  26368 11904 pts/43   S+   00:54   0:00 vim file.txt
+pratiks+ 3550199  0.0  0.0  25344  8000 pts/47   R+   00:55   0:00 ps aux
+pratiks+ 3550200  0.0  0.0   8320  1792 pts/47   S+   00:55   0:00 grep --color=auto pratiks+
+
+b.
+The process for vi file.txt is active and can be seen using the ps command. 
+Process ID for the vim is 3549290.
+
+c.
+pratiks+ 3542394  0.0  0.0  28672 15104 ?        Ss   00:35   0:01 /usr/lib/systemd/systemd --user
+pratiks+ 3542396  0.0  0.0 208576 10880 ?        S    00:35   0:00 (sd-pam)
+pratiks+ 3542402  0.0  0.0  49600 13504 ?        S    00:35   0:00 sshd: pratiksp24@pts/43
+pratiks+ 3542403  0.0  0.0  19840  7872 pts/43   Ss+  00:35   0:00 -bash
+pratiks+ 3549123  0.0  0.0  49280 10368 ?        S    00:53   0:00 sshd: pratiksp24@pts/47
+pratiks+ 3549126  0.0  0.0  19840  7744 pts/47   Ss   00:53   0:00 -bash
+pratiks+ 3551234  0.0  0.0  25344  8000 pts/47   R+   00:59   0:00 ps aux
+pratiks+ 3551235  0.0  0.0   8320  1792 pts/47   S+   00:59   0:00 grep --color=auto pratiks+
+
+d.
+The process for vi file.txt is not active and cannot be seen using the ps command.
+
+5.
+init is the first program that runs in a UNIX environment. 
+The process id for the init process is 1.
+ps aux | head
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.6  0.0 178624 18432 ?        Ss    2023 843:04 /usr/lib/systemd/systemd --switched-root --system --deserialize 18
+root           2  0.0  0.0      0     0 ?        S     2023   2:43 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<    2023   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<    2023   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<    2023   0:00 [kworker/0:0H-events_highpri]
+root           8  0.0  0.0      0     0 ?        I     2023   0:03 [kworker/u512:0-netns]
+root           9  0.0  0.0      0     0 ?        I<    2023   0:00 [mm_percpu_wq]
+root          10  0.0  0.0      0     0 ?        S     2023   0:00 [rcu_tasks_rude_]
+root          11  0.0  0.0      0     0 ?        S     2023   0:00 [rcu_tasks_trace]
+
+6. ps is the command that lists all the running processes of a system. aux are options for the ps command where a stands for "all processes", u stands for user-oriented format", and x instructs ps to include processes that are not associated with a terminal.
+
