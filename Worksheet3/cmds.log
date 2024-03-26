@@ -1,0 +1,115 @@
+  423  ls
+  424  cs131
+  425  cd cs131/
+  426  ls
+  427  mkdir Worksheet3
+  428  cd
+  429  cd cs131/Worksheet2/
+  430  ls
+  431  pwd
+  432  cd ..
+  433  ls
+  434  cd Worksheet3/
+  435  ls
+  436  pwd
+  437  cd
+  438  mv Global\ YouTube\ Statistics.csv /mnt/scratch/FA23_CS131_Ashish/pratiksp24/cs131/Worksheet3
+  439  ls
+  440  cd cs131/
+  441  ls
+  442  cd Worksheet3/
+  443  ls
+  444  man sort
+  445  clear
+  446  ls
+  447  head Global\ YouTube\ Statistics.csv 
+  448  head -1 Global\ YouTube\ Statistics.csv 
+  449  head -1 Global\ YouTube\ Statistics.csv | wc -c
+  450  head -1 Global\ YouTube\ Statistics.csv | wc -l
+  451  head -1 Global\ YouTube\ Statistics.csv | cut -d ","
+  452  cut --help
+  453  cut -d "," Global\ YouTube\ Statistics.csv 
+  454  man cut
+  455  man tr
+  456  head -1 Global\ YouTube\ Statistics.csv | tr "," "\n" wc -l
+  457  head -1 Global\ YouTube\ Statistics.csv | tr "," "\n"| wc -l
+  458  head -1 Global\ YouTube\ Statistics.csv | tr "," "\n"
+  459  head -1 Global\ YouTube\ Statistics.csv | tr "," "\n" | cat -n
+  460  cut -d "," 16,8 | head
+  461  cut -d "," -f 16,8 Global\ YouTube\ Statistics.csv | head
+  462  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | head
+  463  man sort
+  464  ls
+  465  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2n
+  466  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2n | head
+  467  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | head
+  468  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | grep "India" | head
+  469  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | grep "United States" | head
+  470  sort -t "," -k16nr | head
+  471  sort -t "," -k16nr Global\ YouTube\ Statistics.csv | head
+  472  sort -t "," -k16n Global\ YouTube\ Statistics.csv | head
+  473  clear
+  474  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | grep "United States" | head
+  475  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | grep "United States" | uniq |head
+  476  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | uniq |head
+  477  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | uniq -f 2 |head
+  478  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | uniq -f 2 | head
+  479  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | uniq -f 2 
+  480  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr
+  481  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | uniq
+  482  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | grep "United States"
+  483  cut -d "," -f 8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | grep "United States" | head -1
+  484  head -1 Global\ YouTube\ Statistics.csv | tr "," "\n" | cat -n
+  485  head -1 Global\ YouTube\ Statistics.csv 
+  486  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k2nr | grep "United States" | head -1
+  487  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | head 
+  488  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | grep "United States" | head 
+  489  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | grep "United States" | head -1
+  490  touch ws3.txt
+  491  ls
+  492  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv
+  493  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | head -1
+  494  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | head -1 >> ws3.txt 
+  495  cat ws3.txt 
+  496  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | grep "United States" | head -1
+  497  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | grep "United States" | head -1>> ws3.txt 
+  498  cat ws3.txt 
+  499  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | grep "United Kingdom" | head -1
+  500  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | grep "United Kingdom" | head -1 >> ws3.txt 
+  501  cat ws3.txt 
+  502  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | grep "United Kingdom" | head -1 | uniq
+  503  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | head -1 | uniq
+  504  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | head | uniq
+  505  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | head | uniq -f1
+  506  cat ws3.txt 
+  507  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | grep "India" | head -1
+  508  cut -d "," -f 2,8,16 Global\ YouTube\ Statistics.csv | sort -t ',' -k3nr | grep "India" | head -1 >> ws3.txt 
+  509  cat ws3.txt 
+  510  head -1 Global\ YouTube\ Statistics.csv | tr "," "\n" | cat -n
+  511  head Global\ YouTube\ Statistics.csv 
+  512  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | head
+  513  cut -d "," -f 10,2,3,10 Global\ YouTube\ Statistics.csv | head
+  514  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | head
+  515  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | grep "Sports" | head
+  516  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | grep "Sports" | head -1
+  517  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | head -1
+  518  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | head -1 >> ws3.txt 
+  519  cat ws3.txt 
+  520  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | grep "Sports" | head -1 >> ws3.txt 
+  521  cat ws3.txt 
+  522  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | grep "Education" | head
+  523  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | grep "Education" | head -1
+  524  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | grep "Education" | head -1 >> ws3.txt 
+  525  cat ws3.txt 
+  526  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | grep "Entertainment" | head
+  527  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | grep "Entertainment" | head -1
+  528  cut -d "," -f 2,3,10 Global\ YouTube\ Statistics.csv | sort -t "," -k2nr | grep "Entertainment" | head -1 >> ws3.txt 
+  529  cat ws3.txt 
+  530  ls
+  531  vi ws3.txt 
+  532  cat ws3.txt 
+  533  vi ws3.txt 
+  534  cat ws3.txt 
+  535  history
+  536  ls
+  537  history >> cmds.log

@@ -1,0 +1,11 @@
+Task 1: Highest earning youtubers from United States, United Kingdom, and India
+Youtuber,Country,highest_monthly_earnings
+DaFuq!?Boom!,United States,9200000
+Woody & Kleiny,United Kingdom,2000000
+T-Series,India,9000000
+---------------------------------------
+Task 2: Youtubers with highest number of subscribers from Sports, Education, and Entertainment
+Youtuber,subscribers,channel_type
+WWE,96000000,Sports
+Cocomelon - Nursery Rhymes,162000000,Education
+MrBeast,166000000,Entertainment
