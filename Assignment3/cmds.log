@@ -1,0 +1,788 @@
+  696  ls
+  697  cd cs131/
+  698  ls
+  699  mkdir Assignment3
+  700  cd Assignment3/
+  701  ls
+  702  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/last.fake
+  703  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/passwd.fake
+  704  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/ps.fake
+  705  ls
+Task 1----------------------------------------------------------------------------------  
+706  cat last.fake 
+  707  ls
+  708  cat passwd.fake 
+  709  ls
+  710  cat ps.fake 
+  711  man last
+  712  last
+  713  ls
+  714  cat last.fake | grep "sp24"
+  715  cat last.fake | grep "sp24" > lastsp24.fake
+  716  ls
+  717  cat lastsp24.fake 
+  718  wc -l last.fake 
+  719  wc -l last.fake  >> Assignment3.txt
+  720  cat last.fake | grep "sp24" > lastsp24.fake >> Assignment3.txt 
+  721  cat Assignment3.txt 
+  722  ls
+  723  wc -l lastsp24.fake >> Assignment3.txt 
+  724  ls
+  725  cat Assignment3.txt 
+  726  wc -l lastsp24.fake 
+  727  head lastsp24.fake 
+  728  ls
+  729  cat lastsp24.fake 
+  730  ls
+  731  cat last.fake | grep 
+  732  "sp24"
+  733  cat last.fake | grep "sp24"
+  734  cat last.fake | grep "sp24" >> lastsp24.fake 
+  735  cat lastsp24.fake 
+  736  cat last.fake | grep "sp24" >> lastsp24.fake 
+  737  vi Assignment3.txt 
+  738  rm -rf Assignment3.txt 
+  739  touch Assignment3.txt
+  740  wc -l last.fake >> Assignment3.txt 
+  741  cat Assignment3.txt 
+  742  wc -l lastsp24.fake 
+  743  wc -l last.fake 
+  744  rm -rf lastsp24.fake 
+  745  cat last.fake | grep "sp24"
+  746  cat last.fake | grep "sp24" >> lastsp.24.fake
+  747  ls
+  748  mv lastsp.24.fake lastsp.fake
+  749  ls
+  750  mv lastsp.fake lastsp24.fake
+  751  wc -l lastsp24.fake 
+  752  wc -l last.fake 
+  753  cat last.fake 
+  754  wc -l last.fake 
+  755  cat Assignment3.txt 
+  756  wc -l lastsp24.fake >> Assignment3.txt 
+  757  cat Assignment3.txt 
+  758  vi Assignment3.txt 
+  759  cat Assignment3.txt 
+Task 2  ----------------------------------------------------------------------------------
+760  ls
+  761  cat lastsp24.fake grep "Sun" | uniq
+  762  cat lastsp24.fake | grep "Sun" | uniq
+  763  cat lastsp24.fake | grep "Sun"
+  764  cat lastsp24.fake | grep "Sun" | awk '{ print $1 }'
+  765  cat lastsp24.fake | grep "Sun" | awk '{ print $1 }' | uniq
+  766  cat lastsp24.fake | grep "Sun" | awk '{ print $1 }' | sort | uniq
+  767  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"}{ print $1 }' | sort | uniq
+  768  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"}'{ print $1 }' | sort | uniq
+  769  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"}''{ print $1 }' | sort | uniq
+  770  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"}/{ print $1 }' | sort | uniq
+  771  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"} { print $1 }' | sort | uniq
+  772  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"}  print $1 ' | sort | uniq
+  773  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"} { print $1 } ' | sort | uniq
+  774  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"} { print $1 } ' 
+  775  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"} { print $1 } ' | uniq
+  776  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"} { print $1 } END {Kudos to these people for putting in the work ' | uniq
+  777  cat lastsp24.fake | grep "Sun" | awk 'BEGIN {print "The list of people who worked on Sunday are:"} { print $1 } END {print "Kudos to these people for putting in the work"} ' | uniq
+  778  cat lastsp24.fake | grep "Sun" | sort | awk 'BEGIN {print "The list of people who worked on Sunday are:"} { print $1 } END {print "Kudos to these people for putting in the work"} ' | uniq
+  779  cat lastsp24.fake | grep "Sun" | sort | awk 'BEGIN {print "The list of people who worked on Sunday are:"} { print $1 } END {print "Kudos to these people for putting in the work"} ' | uniq >> Assignment3.txt 
+  780  vi Assignment3.txt 
+  781  cat Assignment3.txt 
+  782  cat lastsp24.fake 
+  783  cat lastsp24.fake | awk '{print $3}'
+  784* cat lastsp24.fake [A
+  785  head -5 lastsp24.fake | awk '{print $3}'
+  786  head -5 lastsp24.fake | awk '{print $5}'
+  787  head -5 lastsp24.fake 
+  788  head -5 lastsp24.fake | awk '{print $2}'
+  789  head -5 lastsp24.fake | awk '{print $3}'
+  790  head -5 lastsp24.fake | awk '{print $0}'
+  791  head -5 lastsp24.fake | awk '{print RS}'
+  792  head -5 lastsp24.fake | awk '{print NR}}'
+  793  head -5 lastsp24.fake | awk '{print NR}'
+  794  awk '{print NR": "$0}'
+  795  awk '{print NR": "$0}' lastsp24.fake 
+  796  ls
+  797  cat Assignment3.txt 
+  798  head -5 lastsp24.fake 
+  799  head -5 last.fake 
+  800  ls -l
+  801  clear
+  802  head -5 lastsp24.fake 
+  803  cat lastsp24.fake 
+  804  sed 's/22:00/g' lastsp24.fake 
+  805  sed
+  806  man sed
+  807  sed 's/pratik/g' lastsp24.fake 
+  808  sed 's/pratik' lastsp24.fake 
+  809  cat lastsp24.fake | sed 's/pratik'
+  810  sed `s/pratik/g` lastsp24.fake 
+  811  sed -e `s/pratik/g` lastsp24.fake 
+  812  sed -e `s/pratik/g' lastsp24.fake 
+echo "Hello, world" | sed 's/world/Universe/'
+Task 3----------------------------------------------------------------------------------  
+813  echo "Hello, world" | sed 's/world/Universe/'
+  814  head -5 lastsp24.fake 
+  815  head -5 lastsp24.fake | sed 's/tyler/pratik'
+  816  head -5 lastsp24.fake | sed 's/tyler/pratik/'
+  817  head -5 lastsp24.fake | sed 's/tyler/'
+  818  head -5 lastsp24.fake | sed 's/tyler//'
+  819  head -5 lastsp24.fake 
+  820  head -5 lastsp24.fake | awk '{print $7}'
+  821  cat lastsp24.fake | awk '{print $7}'
+  822  cat lastsp24.fake | awk '{if $7 != '-'print $7}'
+  823  cat lastsp24.fake | awk '{$7 != '-' : print $7 print $6}'
+  824  cat lastsp24.fake | awk '{print $7}'
+  825  cat lastsp24.fake | awk '{if($7, "-") print $7}'
+  826* cat lastsp24.fake | awk '{if index($7, "-") printdssafd $7}'
+  827  cat lastsp24.fake | awk '{if(index($7, "-")) print $7}'
+  828  cat lastsp24.fake | awk '{if(index($7, "-")) print $6}'
+  829  cat lastsp24.fake | awk '{print $7}'
+  830  cat lastsp24.fake | awk '{print $6}'
+  831  cat lastsp24.fake | awk '{if(index($7, "-")) print $6}'
+  832  cat lastsp24.fake | awk '{if(index($7, "-")) print $6}
+  833  cat lastsp24.fake | awk 
+  834  cat lastsp24.fake | awk `
+  835  cat lastsp24.fake | awk '
+{
+ if(index(&7, "-")) {
+  print &6
+ } else {
+  print &7
+}
+'
+  836  cat lastsp24.fake | awk '
+{
+ if(index($7, "-")) {
+  print $6
+ } else {
+  print $7
+}
+'
+  837  cat lastsp24.fake | awk '
+{
+ if(index($7, "-")) {
+  print $6
+ } else {
+  print $7
+}'
+  838  cat lastsp24.fake | awk '
+{
+ if(index($7, "-"))
+  print $6
+ else
+  print $7
+'
+  839  cat lastsp24.fake | awk '
+{
+ if(index($7, "-"))
+  print $6
+ else
+  print $7
+}'
+  840  cat lastsp24.fake | awk '{
+if(index($7, "-"))
+ print $6
+else
+ print $7
+}'
+  841  head lastsp24.fake 
+  842  cat lastsp24.fake 
+  843  cat lastsp24.fake | awk '{
+if(index($7, "-"))
+ print $6
+else
+ print $7
+}'
+  844  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ print $6
+else
+ print $7
+}'
+  845  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+}'
+  846  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+}'
+  847  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+print time
+}'
+  848  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+print time
+split(time, a, ":")
+}'
+  849  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+print time
+split(time, a, ":")
+print a[0]
+}'
+  850  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+print time
+split(time, a, :)
+print a[0]
+}'
+  851  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+print time
+split(time, a, ":")
+print a[1]
+}'
+  852  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+print a[1]
+}'
+  853  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+print a[1]
+}'
+  854  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+print a[1]
+if(time==23 || time <= 4)
+ print "night owl"
+}'
+  855  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+print a[1]
+if(time==23 || time <= 4)
+ print "night owl"
+else
+ print "not night owl"
+}'
+  856  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+print a[1]
+if(time <= 4)
+ print "night owl"
+else
+ print "not night owl"
+}'
+  857  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+print a[1]
+if(int(time) <= 4)
+ print "night owl"
+else
+ print "not night owl"
+}'
+  858  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+print a[1]
+if(int(time) == 23 || int(time) <= 4)
+ print "night owl"
+else
+ print "not night owl"
+}'
+  859  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+print a[1]
+if(int(time) == 23 || int(time) <= 4)
+ print $0
+}'
+  860  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $0
+}'
+  861  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}'
+  862  cat lastsp24.fake | awk 'BEGIN{-v time}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  863  cat lastsp24.fake | awk 'BEGIN{-v time print 'Night Owls List'}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  864  ls
+  865  cat Assignment3.txt 
+  866  cat lastsp24.fake | awk 'BEGIN{-v time print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  867  cat lastsp24.fake | awk 'BEGIN{-v time}{print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  868  cat lastsp24.fake | awk 'BEGIN{-v time}{print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  869  cat lastsp24.fake | awk 'BEGIN{-v time print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+  870  cat lastsp24.fake | awk 'BEGIN{-v time print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  871  cat lastsp24.fake | awk 'BEGIN{-v time}{print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | uniq
+  872  cat lastsp24.fake | sort | awk 'BEGIN{-v time print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | uniq
+  873  cat lastsp24.fake | sort | awk 'BEGIN{-v time} {print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | uniq
+  874  cat lastsp24.fake | sort | awk 'BEGIN{-v time} {print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | uniqcat lastsp24.fake | awk 'BEGIN{-v time} {print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  875  cat lastsp24.fake | awk 'BEGIN{-v time} {print "Night Owls List"}{
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  876  cat lastsp24.fake | awk 'BEGIN{-v time}{
+print "Night Owls List"
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  877  cat lastsp24.fake | awk 'BEGIN{print "Night Owls List" -v time} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  878  cat lastsp24.fake | awk 'BEGIN{print "Night Owls List" -v time} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  879  cat lastsp24.fake | awk 'BEGIN{-v time} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  880  echo "Night Owls List:"; cat lastsp24.fake | awk 'BEGIN{-v time} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  881  cat lastsp24.fake | awk 'BEGIN{
+ -v time
+ print "Night Owls List:"
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' | sort | uniq
+  882  awk 'BEGIN{
+ -v time
+ print "Night Owls List:"
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' lastsp24.fake | sort | uniq
+  883  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:"
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' lastsp24.fake | sort | uniq
+  884  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' lastsp24.fake | sort | uniq
+  885  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+}' lastsp24.fake| uniq
+  886  ls
+  887  cat Assignment3.txt 
+  888  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+| "sort"
+}' lastsp24.fake | uniq
+  889  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1
+| sort
+}' lastsp24.fake | uniq
+  890  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1 | "sort"
+}' lastsp24.fake | uniq
+  891  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1 | "sort" | "uniq"
+}' lastsp24.fake
+  892  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1 | "sort" | "uniq"
+}' lastsp24.fake
+  893  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1 | "sort"
+}' lastsp24.fake | uniq
+  894  cat Assignment3.txt 
+  895  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1 | "sort"
+} END {
+ print "Night Owls are dope. Please ensure you get enough sleep though."
+}' lastsp24.fake | uniq
+  896  awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1 | "sort"
+} END {
+ print "Night Owls are dope. Please ensure you get enough sleep though."
+}' lastsp24.fake | uniq >> Assignment3.txt 
+Task 4--------------------------------------------------------------------------------  
+897  vi Assignment3.txt 
+  898  cat Assignment3.txt 
+  899  awk 'BEGIN{
+ -v time;
+ print "Early Birds List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) >= 5 && int(time) <= 9)
+ print $1 | "sort"
+} END {
+ print "Early Birds are dope. Please ensure you get enough sleep though."
+}' lastsp24.fake | uniq
+  900  awk 'BEGIN{
+ -v time;
+ print "Early Birds List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) >= 5 && int(time) <= 9)
+ print $0 | "sort"
+} END {
+ print "Early Birds are dope. Please ensure you get enough sleep though."
+}' lastsp24.fake | uniq
+  901  cat lastsp24.fake 
+  902  awk 'BEGIN{
+ -v time;
+ print "Early Birds List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) >= 5 && int(time) <= 9)
+ print $0 | "sort"
+} END {
+ print "Early Birds are dope. Please ensure you get enough sleep though."
+}' lastsp24.fake | uniq
+  903  awk 'BEGIN{
+ -v time;
+ print "Early Birds List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) >= 5 && int(time) <= 9)
+ print $1 | "sort"
+} END {
+ print "Early Birds are dope. Please ensure you get enough sleep though."
+}' lastsp24.fake | uniq
+  904  awk 'BEGIN{
+ -v time;
+ print "Early Birds List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) >= 5 && int(time) <= 9)
+ print $1 | "sort"
+} END {
+ print "Early Birds are dope. Please ensure you get enough sleep though."
+}' lastsp24.fake | uniq >> Assignment3.txt 
+  905  vi Assignment3.txt 
+  906  cat Assignment3.txt 
+  907  ls
+Task 5----------------------------------------------------------------------------------
+  908  cat last.fake 
+  909  awk '$1 ~ /^t/' lastsp24.fake | sort | uniq
+  910  awk '$1 ~ /^t/ {print $1}' lastsp24.fake | sort | uniq
+  911  awk '$1 ~ /^t/ {print $1}' lastsp24.fake | sort | uniq >> Assignment3.txt 
+Task 6----------------------------------------------------------------------------------
+  912  vi Assignment3.txt 
+  913  cat passwd.fake 
+  914  head passwd.fake 
+  915  cat Assignment3.txt 
+  916  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1, $3}' passwd.fake
+  917  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+  918  awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake >> Assignment3.txt 
+Task 7----------------------------------------------------------------------------------
+  919  vi Assignment3.txt 
+  920  cat passwd.fake 
+  921  sed '/^[a-zA-Z0-9 ]*$/d' passwd.fake
+  922  sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+  923  sed 's/[a-zA-Z0-9 ]//g' passwd.fake
+  924  sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+  925  sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u >> Assignment3.txt 
+  926  vi Assignment3.txt 
+  927  ls
+  928  history
+  929  history | grep "$(date '+%F')"
+  930  history
+  931  history >> cmds.log

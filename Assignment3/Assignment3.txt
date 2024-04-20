@@ -1,0 +1,164 @@
+Task 1:
+1.
+command used: wc -l last.fake
+output of command: 507 last.fake
+2.
+command used: cat last.fake | grep "sp24" >> lastsp24.fake
+3.
+command used: wc -l lastsp24.fake
+output of command: 478 lastsp24.fake
+----------------------------------------------------------------------------------------------------
+Task 2:
+command used: cat lastsp24.fake | grep "Sun" | sort | awk 'BEGIN {print "The list of people who worked on Sunday are:"} { print $1 } END {print "Kudos to these people for putting in the work"} ' | uniq
+output of command:
+The list of people who worked on Sunday are:
+aayushsp24
+akashsp24
+billysp24
+breannasp24
+briansp24
+chih-kuosp24
+fnusp24
+gavinsp24
+megansp24
+michellesp24
+swansp24
+xuebosp24
+Kudos to these people for putting in the work
+----------------------------------------------------------------------------------------------------
+Task 3:
+command used:
+awk 'BEGIN{
+ -v time;
+ print "Night Owls List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) == 23 || int(time) <= 4)
+ print $1 | "sort"
+} END {
+ print "Night Owls are dope. Please ensure you get enough sleep though."
+}' lastsp24.fake | uniq
+output of command:
+Night Owls List:
+aarushisp24
+aayushsp24
+ajaysp24
+akashsp24
+albertsp24
+alexsp24
+amansp24
+athishsp24
+ayesp24
+billysp24
+brandonsp24
+breannasp24
+daosp24
+davidsp24
+diyasp24
+dylansp24
+edisonsp24
+gavinsp24
+georgesp24
+gradysp24
+gursimransp24
+jadonsp24
+jaydevsp24
+jimmysp24
+justinsp24
+khushisp24
+kobesp24
+madhavsp24
+manassp24
+matthewsp24
+maysp24
+megansp24
+nicolesp24
+robertosp24
+ronsp24
+sandrasp24
+sangsp24
+sheelsp24
+sunidhisp24
+tanishasp24
+tylermsp24
+tylersp24
+vaikuntamsp24
+xiaokesp24
+xuebosp24
+yelinsp24
+zakisp24
+Night Owls are dope. Please ensure you get enough sleep though.
+----------------------------------------------------------------------------------------------------
+Task 4:
+command used:
+awk 'BEGIN{
+ -v time;
+ print "Early Birds List:";
+} {
+if(index($7, "-"))
+ time=$6
+else
+ time=$7
+split(time, a, ":")
+if(int(time) >= 5 && int(time) <= 9)
+ print $1 | "sort"
+} END {
+ print "Early Birds are dope. Please ensure you get enough sleep though."
+}' lastsp24.fake | uniq
+output of command:
+Early Birds List:
+aayushsp24
+ajaysp24
+ericsp24
+gradysp24
+ronsp24
+Early Birds are dope. Please ensure you get enough sleep though.
+----------------------------------------------------------------------------------------------------
+Task 5:
+command used:
+awk '$1 ~ /^t/ {print $1}' lastsp24.fake | sort | uniq
+output of command:
+taliasp24
+tanishasp24
+tylermsp24
+tylersp24
+----------------------------------------------------------------------------------------------------
+Task 6:
+command used:
+awk -F':' '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+output of command:
+angie23fa
+areebah23fa
+apple23fa
+ajay23fa
+alan23fa
+amreenf23
+acesp24
+akashsp24
+ayesp24
+alexsp24
+aayushsp24
+ajaysp24
+ashish
+amansp24
+----------------------------------------------------------------------------------------------------
+Task 7:
+command used:
+sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
+output of command:
+-::::-:/://
+-:::::///-://
+-:::::///__/-://
+-:::::/://
+::::-:///://
+:::::///://
+:::::///_/://
+:::::///__/://
+::::://://
+:::::/://
+----------------------------------------------------------------------------------------------------
+
