@@ -1,0 +1,202 @@
+ 1002  cd cs131/
+ 1003  ls
+ 1004  mkdir Worksheet5
+ 1005  cd Worksheet5/
+ 1006  ls
+ 1007  pwd
+ 1008  cd
+ 1009  cd cs131/
+ 1010  ls
+ 1011  cd ..
+ 1012  ls
+ 1013  cp Global\ YouTube\ Statistics.csv /mnt/scratch/FA23_CS131_Ashish/pratiksp24/cs131/Worksheet5
+ 1014  ls
+ 1015  cd /mnt/scratch/FA23_CS131_Ashish/pratiksp24/cs131/Worksheet5
+ 1016  ls
+ 1017  head Global\ YouTube\ Statistics.csv 
+ 1018  ls
+ 1019  vi script.sh
+ 1020  ./sc
+ 1021  ls -ltr
+ 1022  chmod u+x script.sh 
+ 1023  ./script.sh 
+ 1024  vi script.sh 
+ 1025  ./script.sh Global\ YouTube\ Statistics.csv 
+ 1026  vi script.sh 
+ 1027  ls
+ 1028  mv Global\ YouTube\ Statistics.csv youtube.csv
+ 1029  ls
+ 1030  ./script.sh youtube.csv 
+ 1031  vi script.sh 
+ 1032  ./script.sh youtube.csv 
+ 1033  vi script.sh 
+ 1034  ./script.sh youtube.csv 
+ 1035  vi script.sh 
+ 1036  ./script.sh youtube.csv 
+ 1037  vi script.sh 
+ 1038  ./script.sh 
+ 1039  vi script.sh 
+ 1040  ./script.sh 
+ 1041  vi script.sh 
+ 1042  ./script.sh 
+ 1043  vi script.sh 
+ 1044  ./script.sh 
+ 1045  vi script.sh 
+ 1046  ./script.sh 
+ 1047  vi script.sh 
+ 1048  ls
+ 1049  cat ~
+ 1050  ls -l
+ 1051  cat '~'
+ 1052  rm rf '~'
+ 1053  ls
+ 1054  cat youtube.csv | grep "United States" | head -5
+ 1055  vi script.sh 
+ 1056  ./script.sh 
+ 1057  man grep
+ 1058  vi script.sh 
+ 1059  ./script.sh 
+ 1060  vi script.sh 
+ 1061  ./script.sh 
+ 1062  vi script.sh 
+ 1063  ./script.sh 
+ 1064  vi script.sh 
+ 1065  ./script.sh 
+ 1066  vi script.sh 
+ 1067  ./script.sh 
+ 1068  head youtube.csv 
+ 1069  head -2 youtube.csv 
+ 1070  vi script.sh 
+ 1071  ./script.sh 
+ 1072  vi script.sh 
+ 1073  ./script.sh 
+ 1074  vi script.sh 
+ 1075  ls
+ 1076  head -5 youtube.csv 
+ 1077  ls
+ 1078  vi script.sh 
+ 1079  ./script.sh 
+ 1080  vi script.sh 
+ 1081  ./script.sh 
+ 1082  vi script.sh 
+ 1083  ./script.sh 
+ 1084  vi script.sh 
+ 1085  ./script.sh 
+ 1086  vi script.sh 
+ 1087  ./script.sh 
+ 1088  vi script.sh 
+ 1089  ./script.sh 
+ 1090  vi script.sh 
+ 1091  ./script.sh 
+ 1092  head youtube.csv 
+ 1093  vi script.sh 
+ 1094  head -10 youtube.csv 
+ 1095  head -20 youtube.csv 
+ 1096  vi script.sh 
+ 1097  ./script.sh 
+ 1098  ls
+ 1099  vi script.sh 
+ 1100  ./script.sh 
+ 1101  vi script.sh 
+ 1102  ./script.sh 
+ 1103  vi script.sh 
+ 1104  ./script.sh 
+ 1105  vi script.sh 
+ 1106  ./script.sh 
+ 1107  vi script.sh 
+ 1108  ./script.sh 
+ 1109  vi script.sh 
+ 1110  ./script.sh 
+ 1111  vi script.sh 
+ 1112  ./script.sh 
+ 1113  ls
+ 1114  mkdir United States
+ 1115  ls
+ 1116  ls -l
+ 1117  rm -rf United States
+ 1118  ls
+ 1119  mkdir United\ States
+ 1120  ls
+ 1121  vi script.sh 
+ 1122  ls
+ 1123  vi script.sh 
+ 1124  ./script.sh 
+ 1125  vi script.sh 
+ 1126  ./script.sh 
+ 1127  vi script.sh 
+ 1128  ./script.sh 
+ 1129  vi script.sh 
+ 1130  ./script.sh 
+ 1131  vi script.sh 
+ 1132  ./script.sh 
+ 1133  ls
+ 1134  vi script.sh 
+ 1135  ls
+ 1136  ./script.sh 
+ 1137  ls
+ 1138  cat Music.txt 
+ 1139  vi script.sh 
+ 1140  ./script.sh 
+ 1141  cat /dev/null > Music.txt 
+ 1142  ls
+ 1143  cat Music.txt 
+ 1144  ./script.sh 
+ 1145  cat Music.txt 
+ 1146  ls
+ 1147  cat /dev/null > Music.txt 
+ 1148  cat Music.txt 
+ 1149  vi script.sh 
+ 1150  ls
+ 1151  cat Music.txt 
+ 1152  ./script.sh 
+ 1153  ls
+ 1154  wc -l Comedy.txt 
+ 1155  cat Comedy.txt 
+ 1156  touch ws5.txt
+ 1157  echo "Number of entries: " >> ws5.txt 
+ 1158  cat ws5.txt 
+ 1159  wc -l Music.txt >> ws5.txt 
+ 1160  cat ws5.txt 
+ 1161  wc -l Entertainment.txt >> ws5.txt 
+ 1162  wc -l Gaming.txt >> ws5.txt 
+ 1163  wc -l Comedy.txt >> ws5.txt 
+ 1164  cat ws5.txt 
+ 1165  ls
+ 1166  vi script.sh 
+ 1167  ls
+ 1168  ./script.sh 
+ 1169  vi script.sh 
+ 1170  ./script.sh 
+ 1171  ls
+ 1172  ls United\ States/
+ 1173  vi script.sh 
+ 1174  ./script.sh 
+ 1175  vi script.sh 
+ 1176  ./script.sh 
+ 1177  ls
+ 1178  ./script.sh 
+ 1179  vi script.sh 
+ 1180  ./script.sh 
+ 1181  ls
+ 1182  ls United\ States/
+ 1183  cd United\ States/
+ 1184  ls
+ 1185  wc -l Comedy.txt 
+ 1186  touch ws5.txt
+ 1187  ls
+ 1188  echo "Number of entries: " >> ws5.txt 
+ 1189  wc -l 
+ 1190  wc -l Music.txt >> ws5.txt 
+ 1191  wc -l Entertainment.txt >> ws5.txt 
+ 1192  wc -l Gaming.txt >> ws5.txt 
+ 1193  wc -l Comedy.txt >> ws5.txt 
+ 1194  ls
+ 1195  cat ws5.txt 
+ 1196  cd ..
+ 1197  ls
+ 1198  rm -rf Comedy.txt Entertainment.txt Gaming.txt Music.txt ws5.txt 
+ 1199  ls
+ 1200  rm -rf youtube.csv 
+ 1201  ls
+ 1202  history
+ 1203  history >> cmds.log
